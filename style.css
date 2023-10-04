@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #a8c0ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3f2b96,
+    #a8c0ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3f2b96,
+    #a8c0ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  min-height: 30vh;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buttons button {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 0.5rem;
+  color: #3f2b96;
+
+  font-weight: bold;
+  text-indent: -9999px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+.buttons .rock {
+  background-image: url(Images/rock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.buttons .paper {
+  background-image: url(Images/paper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.buttons .scissor {
+  background-image: url(Images/scissor.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.reset {
+  margin-top: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.reset:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 1rem;
+  }
+  .buttons button {
+    height: 100px;
+    width: 100px;
+  }
+}
